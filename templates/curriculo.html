@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Currículo</title>
+    <style>
+        /* CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .titulo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .campo {
+            margin-bottom: 20px;
+        }
+        
+        .campo label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .campo input[type="text"], .campo input[type="email"], .campo input[type="tel"] {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .campo textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .botao {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .botao:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="titulo">Formulário de Currículo</h2>
+        <form class="formulario">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="campo">
+                <label for="objetivo">Objetivo:</label>
+                <textarea id="objetivo" name="objetivo" required></textarea>
+            </div>
+            <div class="campo">
+                <label for="formacao">Formação:</label>
+                <input type="text" id="formacao" name="formacao" required>
+            </div>
+            <div class="campo">
+                <label for="experiencia">Experiência:</label>
+                <textarea id="experiencia" name="experiencia" required></textarea>
+            </div>
+            <button class="botao" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
