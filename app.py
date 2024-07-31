@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route("/inicio")
 def home():
-    df = pd.read_csv("livros.csv")
+    df = pd.read_csv("data/livros.csv")
     lista = df["Titulo do Livro"].tolist()
     return render_template("lista.html", titulo=TITULO, lista_de_livros=lista)
 
